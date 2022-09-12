@@ -115,7 +115,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: EdgeInsets.all(10.0),
                   child: Text(
                     "Costa Mendekat Ke Palmeiras",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -189,9 +192,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   child: Row(
                     children: <Widget>[
-                      Image.network(
-                        'https://vid.alarabiya.net/images/2021/02/10/204486ae-ff75-46bd-915e-96568d21777f/204486ae-ff75-46bd-915e-96568d21777f_16x9_1200x676.jpg?width=1120&format=jpg',
-                        width: 250,
+                      Expanded(
+                        child: Image.network(
+                          'https://vid.alarabiya.net/images/2021/02/10/204486ae-ff75-46bd-915e-96568d21777f/204486ae-ff75-46bd-915e-96568d21777f_16x9_1200x676.jpg?width=1120&format=jpg',
+                        ),
                       ),
                       Expanded(
                         child: Text(
